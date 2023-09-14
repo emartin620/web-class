@@ -1,3 +1,31 @@
+body{
+    background-color: #2A2D34;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
 p{
-    color: red;
+    color: #80C2AF;
+}
+
+h1{
+    color: #A0DDE6;
+    font-size: 70px;
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+h3{
+    color: #A0DDE6;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 0px;
+}
+
+.title{
+    font-size: 30px;
+}
+
+.paragraph{
+    font-size: 17px;
+
 }
