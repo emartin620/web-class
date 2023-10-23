@@ -9,41 +9,32 @@
     background-color: black;
     border: 1px solid black;
     padding: 20px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 
   .one{
     background-image: url(images/space6.jpg);
-    background-size: contain;
-    background-repeat: no-repeat;
     grid-area: 1 / 1 / span 2 / span 2;
   }
 
   .two{
     background-image: url(images/space5.jpg);
-    background-size: contain;
-    background-repeat: no-repeat;
   }
 
   .three{
     background-image: url(images/space3.jpg);
-    background-size: contain;
-    background-repeat: no-repeat;
   }
 
   .four{
     background-image: url(images/space4.jpg);
-    background-size: contain;
-    background-repeat: no-repeat;
   }
 
   .five{
     background-image: url(images/space2.jpg);
-    background-size: contain;
-    background-repeat: no-repeat;
   }
 
   .six{
     background-image: url(images/space1.jpg);
-    background-size: contain;
-    background-repeat: no-repeat;
   }
