@@ -1,0 +1,536 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+	background: linear-gradient(-45deg, #ffc2d7, #e7bbff, #c7b2ff, #c9d9ff, #e2fcff);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+    font-family: 'Yomogi', cursive;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+h1{
+    font-weight: normal;
+    /*text-align: center;*/
+    font-size: 84px;
+}
+
+h3{
+    font-weight: normal;
+    /*text-align: center;*/
+    font-size: 20px;
+    margin-top: 3vh;
+}
+
+#title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    color: #083679;
+}
+
+
+p{
+    color: #083679;
+}
+
+.stanza1{
+    text-align: center;
+    font-size: 36px;
+    padding-top: 3%;
+} 
+
+#page1 .stanza1{
+    padding-top: 2%;
+}
+
+.line1{
+    font-size: 24px;
+    padding: 30px;
+    margin-left: 20px;
+}
+
+.line2{
+    text-align: right;
+    font-size: 24px;
+    padding: 30px;
+    margin-right: 20px;
+}
+
+
+.mitten{
+
+    transition: all 1s;
+}
+
+.mitten:hover{
+    cursor: pointer;
+    background-color: #c7b2ff;
+    border-radius: 30px;
+}
+
+
+#page1{
+    position: relative;
+}
+
+.sunset{
+    background-image: url(images/sunset_motion_diffusion.gif);
+    width: 250px;
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 400px;
+    left: 600px;
+    transition: all 1s;
+}
+
+.sunset:hover{
+    width: 280px;
+    height: 280px;
+    cursor: pointer;
+    background-color: #78ABCE;
+    border-radius: 30px;
+}
+
+.bell{
+    background-image: url(images/bell_motion_diffusion.gif);
+    width: 250px;
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 400px;
+    left: 600px;
+    transition: all 1s;
+}
+
+.bell:hover{
+    width: 280px;
+    height: 280px;
+    cursor: pointer;
+    background-color: #ffc2d7;
+    border-radius: 30px;
+}
+
+.first{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+#introduction{
+    margin-right: 100px;
+    position: relative;
+}
+
+#titletext{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    color: #083679;
+    text-align: right;
+}
+
+.btn{
+    width: 25%;
+    height: 7%;
+    background-color: #083679;
+    color: white;
+    font-size: 24px;
+    margin-top: 50px;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 1.5s;
+}
+
+.btn:hover{
+    background-color: white;
+    color: #083679;
+}
+
+#mittenmotion{
+    background-image: url(images/mitten_still.gif);
+    width: 250px;
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 70px;
+    left: 100px;
+    transition: background-color 3s, background-image .1s, border-radius 1s;
+}
+
+
+#mittenmotion:hover{
+    background-image: url(images/mitten_motion_diffusion.gif);
+    width: 250px;
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 70px;
+    left: 100px;
+    cursor: pointer;
+    background-color: #c7b2ff;
+    border-radius: 30px;
+}
+
+#sunsetmotion{
+    background-image: url(images/sunset_still.gif);
+    width: 250px;
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 225px;
+    left: 500px;
+    transition: background-color 3s, background-image .1s, border-radius 1s;
+}
+
+
+
+#sunsetmotion:hover{
+    background-image: url(images/sunset_motion_diffusion.gif);
+    width: 250px;
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 225px;
+    left: 500px;
+    cursor: pointer;
+    background-color: #78ABCE;
+    border-radius: 30px;
+}
+
+#bellmotion{
+    background-image: url(images/bell_still.gif);
+    width: 250px;
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 450px;
+    left: 200px;
+    transition: background-color 3s, background-image .1s, border-radius 1s;
+}
+
+
+#bellmotion:hover{
+    background-image: url(images/bell_motion_diffusion.gif);
+    width: 250px;
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 450px;
+    left: 200px;
+    cursor: pointer;
+    background-color: #ffc2d7;
+    border-radius: 30px;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+}
+
+.navigation{
+    position: bottom;
+    width: 100vw;
+    height: 22vh;
+    background-color: #083579c8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.options{
+    width: 85vw;
+    height: 22vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.one-still{
+    background-image: url(images/house_still.gif);
+    width: 150px;
+    height: 150px;
+    background-size: cover;
+    background-position: absolute;
+    transition: background-color 3s, border-radius 1s;
+}
+
+.one-still:hover{
+    cursor: pointer;
+    background-color: #E2FCFF;
+    border-radius: 30px;
+}
+
+.two-still{
+    background-image: url(images/mitten_still.gif);
+    width: 150px;
+    height: 150px;
+    background-size: cover;
+    background-position: absolute;
+    transition: background-color 3s, border-radius 1s;
+}
+
+.two-still:hover{
+    cursor: pointer;
+    background-color: #c7b2ff;
+    border-radius: 30px;
+}
+
+.three-still{
+    background-image: url(images/sunset_still.gif);
+    width: 150px;
+    height: 150px;
+    background-size: cover;
+    background-position: absolute;
+    transition: background-color 3s, border-radius 1s;
+}
+
+.three-still:hover{
+    cursor: pointer;
+    background-color: #78ABCE;
+    border-radius: 30px;
+}
+
+.four-still{
+    background-image: url(images/bell_still.gif);
+    width: 150px;
+    height: 150px;
+    background-size: cover;
+    background-position: absolute;
+    transition: background-color 3s, border-radius 1s;
+}
+
+.four-still:hover{
+    cursor: pointer;
+    background-color: #ffc2d7;
+    border-radius: 30px;
+}
+
+.one-move{
+    background-image: url(images/house_still.gif);
+    width: 150px;
+    height: 150px;
+    background-size: cover;
+    background-position: absolute;
+    transition: background-color 3s, border-radius 1s;
+}
+
+.one-move:hover{
+    cursor: pointer;
+    background-color: #E2FCFF;
+    border-radius: 30px;
+}
+
+.two-move{
+    background-image: url(images/mitten_motion_diffusion.gif);
+    width: 150px;
+    height: 150px;
+    background-size: cover;
+    background-position: absolute;
+    transition: background-color 3s, border-radius 1s;
+}
+
+.two-move:hover{
+    cursor: pointer;
+    background-color: #c7b2ff;
+    border-radius: 30px;
+}
+
+.three-move{
+    background-image: url(images/sunset_motion_diffusion.gif);
+    width: 150px;
+    height: 150px;
+    background-size: cover;
+    background-position: absolute;
+    transition: background-color 3s, border-radius 1s;
+}
+
+.three-move:hover{
+    cursor: pointer;
+    background-color: #78ABCE;
+    border-radius: 30px;
+}
+
+.four-move{
+    background-image: url(images/bell_motion_diffusion.gif);
+    width: 150px;
+    height: 150px;
+    background-size: cover;
+    background-position: absolute;
+    transition: background-color 3s, border-radius 1s;
+}
+
+.four-move:hover{
+    cursor: pointer;
+    background-color: #ffc2d7;
+    border-radius: 30px;
+}
+
+.links{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (max-width: 1230px) {
+    #mittenmotion{
+        width: 200px;
+        height: 200px;
+        top: 70px;
+        left: 80px;
+    }
+    #mittenmotion:hover{
+        width: 200px;
+        height: 200px;
+        top: 70px;
+        left: 80px;
+    }
+    #sunsetmotion{
+        width: 200px;
+        height: 200px;
+        top: 225px;
+        left: 350px;
+    }
+    #sunsetmotion:hover{
+        width: 200px;
+        height: 200px;
+        top: 225px;
+        left: 350px;
+    }
+    #bellmotion{
+        width: 200px;
+        height: 200px;
+        top: 450px;
+        left: 125px;
+    }
+    #bellmotion:hover{
+        width: 200px;
+        height: 200px;
+        top: 450px;
+        left: 125px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    h1{
+        font-size: 70px;
+    }
+    h3{
+        font-size: 18px;
+    }
+    #mittenmotion{
+        width: 200px;
+        height: 200px;
+        top: 70px;
+        left: 40px;
+    }
+    #mittenmotion:hover{
+        width: 200px;
+        height: 200px;
+        top: 70px;
+        left: 60px;
+    }
+    #sunsetmotion{
+        width: 200px;
+        height: 200px;
+        top: 225px;
+        left: 275px;
+    }
+    #sunsetmotion:hover{
+        width: 200px;
+        height: 200px;
+        top: 225px;
+        left: 275px;
+    }
+    #bellmotion{
+        width: 200px;
+        height: 200px;
+        top: 450px;
+        left: 115px;
+    }
+    #bellmotion:hover{
+        width: 200px;
+        height: 200px;
+        top: 450px;
+        left: 115px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    h1{
+        font-size: 70px;
+    }
+    h3{
+        font-size: 15px;
+    }
+    #mittenmotion{
+        width: 175px;
+        height: 175px;
+        top: 70px;
+        left: 10px;
+    }
+    #mittenmotion:hover{
+        width: 175px;
+        height: 175px;
+        top: 70px;
+        left: 10px;
+    }
+    #sunsetmotion{
+        width: 175px;
+        height: 175px;
+        top: 225px;
+        left: 215px;
+    }
+    #sunsetmotion:hover{
+        width: 175px;
+        height: 175px;
+        top: 225px;
+        left: 215px;
+    }
+    #bellmotion{
+        width: 175px;
+        height: 175px;
+        top: 450px;
+        left: 70px;
+    }
+    #bellmotion:hover{
+        width: 175px;
+        height: 175px;
+        top: 450px;
+        left: 70px;
+    }
+}
