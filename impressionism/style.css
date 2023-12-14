@@ -1,0 +1,451 @@
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+.title{
+    height: 100vh;
+    width: 100vw;
+    background-image: url(images/impression_sunrise.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family: 'Marcellus SC', serif;
+    font-size: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFE1CA;
+    text-align: center;
+}
+
+.summary{
+    width: 100vw;
+    height: 70vh;
+    background-color: #405144;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.years{
+    grid-area: 1 / 1 / 2 / 2;
+    color: #C45F46;
+    font-family: 'Marcellus SC', serif;
+    font-size: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.summary-text{
+    grid-area: 1 / 2 / 2 / 3;
+    color: #FFE1CA;
+    font-family: 'Mandali', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    width: 60vw;
+    padding: 0 40px;
+}
+
+.stylistic-info{
+    width: 100vw;
+    height: 60vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+
+}
+
+.stylistic-text{
+    grid-area: 1 / 1 / 2 / 2;
+    background-color: #BD8B66;
+    width: 60vw;
+    color: #163D35;
+    font-family: 'Mandali', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: right;
+    padding: 0 40px;
+    font-size: 16px;
+}
+
+.stylistic-image{
+    grid-area: 1 / 2 / 2 / 3;
+    background-color: #163D35;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.artist-info{
+    width: 100vw;
+    height: 170vh;
+    background-color: #405144;
+    color: #C45F46;
+    font-family: 'Marcellus SC', serif;
+    font-size: 80px;
+    text-align: center;
+    padding-top: 40px;
+}
+
+
+.artist-list{
+    color:#FFE1CA;
+    font-family: 'Mandali', sans-serif;
+    font-size: 24px;
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul{
+    list-style-type: none;
+    width: 80vw;
+}
+
+li{
+    outline: #FFE1CA solid 3px;
+    border-radius: 5px;
+    margin-top: 30px;
+    padding-left: 20px;
+    transition: all .3s;
+}
+
+h4{
+    font-weight: normal;
+}
+
+.arrow{
+    width: 45px;
+    height: 45px;
+    background-image: url(images/arrow3.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 20px;
+    padding: 5px;
+    display: none;
+}
+
+.artist-text{
+    display: none;
+    height: 400px;
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+    
+    .cassatt-image { 
+        grid-area: 1 / 1 / 2 / 2; 
+        background-image: url(images/artists/mary_cassatt.jpeg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 400px;
+    }
+
+    .cassatt-text { 
+        grid-area: 1 / 2 / 2 / 3; 
+        font-size: 20px;
+        margin-right: 60px;
+    }
+
+    .chase-image { 
+        grid-area: 1 / 1 / 2 / 2; 
+        background-image: url(images/artists/william_merritt_chase.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 400px;
+    }
+
+    .degas-image{
+        grid-area: 1 / 1 / 2 / 2; 
+        background-image: url(images/artists/edgar_degas.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 400px;
+    }
+
+    .manet-image{
+        grid-area: 1 / 1 / 2 / 2; 
+        background-image: url(images/artists/edouard_manet.jpeg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 400px;
+    }
+
+    .morisot-image{
+        grid-area: 1 / 1 / 2 / 2; 
+        background-image: url(images/artists/berthe_morisot.jpeg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 400px;
+    }
+
+    .monet-image{
+        grid-area: 1 / 1 / 2 / 2; 
+        background-image: url(images/artists/claude_monet.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 400px;
+    }
+
+    .pissarro-image{
+        grid-area: 1 / 1 / 2 / 2; 
+        background-image: url(images/artists/camille_pissarro.jpeg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 400px;
+    }
+
+    .renoir-image{
+        grid-area: 1 / 1 / 2 / 2; 
+        background-image: url(images/artists/renoir.jpeg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 400px;
+    }
+
+    .sisley-image{
+        grid-area: 1 / 1 / 2 / 2; 
+        background-image: url(images/artists/alfred_sisley.jpeg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 400px;
+    }
+
+li:hover{
+    background-color: #FFE1CA;
+    color:#163D35;
+    cursor: pointer;
+}
+
+.gallery-images {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    background-color: #163D35;
+    width: 100vw;
+    height: 250vh;
+    }
+    
+    body{
+        background-color: #163D35;
+    }
+    
+    .gallery{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        min-height: 50vh;
+        grid-gap: 2rem;
+    }
+    
+    .img-container{
+        overflow: hidden;
+    }
+    
+    .img-container img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: all .3s ease-out;
+        cursor: pointer;
+    
+    }
+    
+    .img-container img:hover{
+        transform: scale(1.2);
+    }
+    
+    .modal{
+        background: rgba(9, 31, 26, .9);
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        pointer-events: none;
+        transition: .25s ease-out;
+    }
+    
+    .modal.open{
+        opacity: 1;
+        pointer-events: all;
+    }
+    
+    .full-img{
+        position: absolute;
+        height: 70%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%) scale(.5);
+        transition: all .25s ease-out;
+    }
+    
+    .full-img.open{
+        transform: translate(-50%,-50%) scale(1);
+    }
+    
+    .modal p{
+        color: #FFE1CA;
+        font-size: 13px;
+        position: absolute;
+        bottom: 5%;
+        left: 50%;
+        transform: translate(-50%,-5%);
+        font-family: 'Mandali', sans-serif;
+    }
+
+    #artists {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        min-height: 100vh; 
+      }
+      
+      .artist-info {
+        flex: 1; 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      
+      .footer {
+        display: flex;
+        justify-content: space-between;
+        font-family: 'Mandali', sans-serif;
+        font-size: 20px;
+        margin-top: auto; 
+        width: 100%;
+        padding: 10px;
+        color: #BD8B66;
+      }
+      
+      a{
+        text-decoration: none;
+        color: #BD8B66;
+        transition: .3s all;
+      }
+
+      a:hover{
+        background-color: #163D35;
+        border-radius: 7px;
+        color: #FFE1CA
+      }
+
+      @media only screen and (max-width: 900px) {
+        .summary{
+            width: 100vw;
+            height: 70vh;
+            background-color: #405144;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: 1fr;
+            grid-column-gap: 0px;
+            grid-row-gap: 0px;
+        }
+        
+        .years{
+            grid-area: 1 / 1 / 2 / 2;
+            color: #C45F46;
+            font-family: 'Marcellus SC', serif;
+            font-size: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .summary-text{
+            grid-area: 1 / 2 / 2 / 3;
+            color: #FFE1CA;
+            font-family: 'Mandali', sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: left;
+            width: 60vw;
+            padding: 0 40px;
+            font-size: 12px;
+        }
+        
+        .stylistic-info{
+            width: 100vw;
+            height: 60vh;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: 1fr;
+            grid-column-gap: 0px;
+            grid-row-gap: 0px;
+        
+        }
+        
+        .stylistic-text{
+            grid-area: 1 / 1 / 2 / 2;
+            background-color: #BD8B66;
+            width: 60vw;
+            color: #163D35;
+            font-family: 'Mandali', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: right;
+            padding: 0 40px;
+            font-size: 12px;
+        }
+        
+        .stylistic-image{
+            width: 40vw;
+            grid-area: 1 / 2 / 2 / 3;
+            background-color: #163D35;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .stylistic-image img{
+            height: 21vh;
+        }
+      }
+
+      @media only screen and (max-width: 650px) {
+        
+          .cassatt-text {
+            font-size: 10px;
+          }
+
+          .title{
+            font-size: 80px;
+          }
+      }
+
+      @media only screen and (max-width: 850px) {
+        
+        .cassatt-text {
+          font-size: 13px;
+        }
+    }
